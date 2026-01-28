@@ -1,0 +1,336 @@
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f9f9fb;
+    color: #2c2c2c;
+}
+
+
+.container {
+    text-align: center;
+    padding: 90px 20px 50px;
+    margin: 40px auto;
+    max-width: 900px;
+
+    background: rgba(255, 255, 255, 0.75); /* glass effect */
+    backdrop-filter: blur(8px);
+
+    border-radius: 18px;
+    border: 1px solid rgba(214, 51, 132, 0.25);
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+.container {
+    text-align: center;
+    padding: 90px 20px 50px;
+    margin: 40px auto;
+    max-width: 900px;
+
+    border: 2px solid #f1c6da;
+    border-radius: 16px;
+}
+.container::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #d63384;
+    margin: 30px auto 0;
+    border-radius: 2px;
+}
+
+h1 {
+    font-size: 44px;
+    color: #1f1f1f;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #d63384; /* soft pink accent */
+    margin-bottom: 15px;
+}
+
+
+p {
+    font-size: 20px;
+    color: #555;
+}
+.about {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about p {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.skills {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+}
+
+.skills-list span {
+    display: inline-block;
+    background-color: #ffe6f0;
+    color: #a61e4d;
+    padding: 10px 18px;
+    margin: 8px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skills-list span:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(214, 51, 132, 0.25);
+}
+.projects {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 8px 16px;
+    border: 1px solid #d63384;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #d63384;
+    font-weight: 600;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.project-card a:hover {
+    background-color: #d63384;
+    color: #ffffff;
+}
+
+
+.project-card h3 {
+    color: #1f1f1f;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    color: #d63384;
+    font-weight: 600;
+}
+.resume-section {
+    text-align: center;
+    margin: 60px auto;
+}
+
+.resume-section p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #d63384;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(214, 51, 132, 0.35);
+}
+.contact {
+    text-align: center;
+    margin: 40px auto 20px; /* top | sides | bottom */
+}
+
+
+.contact a {
+    color: #d63384;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+.contact:last-of-type {
+    margin-bottom: 0;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #f1f1f1;
+    color: #666;
+    margin: 0;           /* 👈 IMPORTANT */
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    object-position: center 35%;  /* 👈 THIS IS KEY */
+
+    margin-bottom: 18px;
+    border: 4px solid #d63384;
+    box-shadow: 0 10px 30px rgba(214, 51, 132, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 14px 40px rgba(214, 51, 132, 0.45);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
+.headline {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+}
+.hero-buttons {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background-color: #d63384;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(214, 51, 132, 0.35);
+}
+
+.btn.primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn.outline {
+    border: 2px solid #d63384;
+    color: #d63384;
+}
+
+.btn.outline:hover {
+    background-color: #d63384;
+    color: #fff;
+}
+.page-wrapper {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px 20px;
+
+    background-color: #ffffff;
+    border-radius: 22px;
+
+    border: 2px solid rgba(214, 51, 132, 0.35);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.08),
+        0 0 0 6px rgba(214, 51, 132, 0.05);
+}
+.value-section {
+    max-width: 700px;
+    margin: 25px auto 0;
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+.certifications {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.certifications ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.certifications li {
+    font-size: 17px;
+    color: #555;
+    margin: 12px 0;
+}
+
+.career-goal {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.career-goal p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+
+
+
+
