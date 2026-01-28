@@ -1,4 +1,4 @@
-# Kotla Mahathi – Portfolio 🌸
+# Kotla Mahathi – Portfolio 
 
 Welcome to my personal portfolio website.
 
