@@ -44,7 +44,8 @@ A deep learning-based system using CNN to classify CT scan images into cancerous
 ---
 
 ## 📄 Resume
-You can download my resume directly from my portfolio website.
+Resume is available on request.
+
 
 ---
 
