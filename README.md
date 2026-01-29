@@ -54,6 +54,3 @@ Resume is available on request.
 - **LinkedIn:** https://www.linkedin.com/in/mahathikotla  
 - **GitHub:** https://github.com/Mahathi008  
 
----
-
-⭐ If you like this portfolio, feel free to star the repository!
